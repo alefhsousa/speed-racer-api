@@ -1,0 +1,8 @@
+en:
+  without_winner_pilots: There is no winner
+  without_pilots: The list of pilots cannot be null or empty
+  invalid_time_format: The format of colum time in log file is invalid. line {} content {}
+  invalid_car_number: The format of car number in log file is invalid. line {} content {}
+  invalid_pilot_name: The format of pilot name in log file is invalid. line {} content {}
+  invalid_lap_times: The format of laps in log file is invalid. line {} content {}
+  invalid_lap_speed: The format of lap_average in log file is invalid. line {} content {}
