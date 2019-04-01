@@ -1,3 +1,6 @@
+from datetime import timedelta
+from functools import reduce
+
 from domain.model.race.lap.lap import Lap
 
 
@@ -15,3 +18,11 @@ class Pilot(object):
     @property
     def finished(self) -> bool:
         return self.total_laps == 4
+
+    @property
+    def race_duration(self):
+        return reduce(lambda acc, lap: acc + lap.lap_time, self.laps, timedelta())
+
+    @property
+    def avg_speed(self):
+        return round(reduce(lambda acc, lap: acc + lap.lap_speed, self.laps, 0) / self.total_laps, 2)

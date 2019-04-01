@@ -37,7 +37,6 @@ class LogParser(object):
 
     def process_log(self) -> Either:
         violations = []
-        racers = []
         grouped_data = defaultdict(list)
         with open(SPEED_RACER_FILE, 'r', encoding='utf-8') as file:
             lines = file.readlines()
@@ -56,8 +55,6 @@ class LogParser(object):
                     key = self._extract_pilot_number_from_tuple(tuple_data)
                     if key:
                         grouped_data[key].append(tuple_data)
-                   # racers.append(self.mapper.to_model(data.groups()))
-                   # racers.append(data.groups())
                 else:
                     violations += [violation for violation in result.value]
 

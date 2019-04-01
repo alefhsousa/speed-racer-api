@@ -13,5 +13,5 @@ class PilotMapper(LogMapper):
         car, pilot_name = str(line_content[1][0][1]).strip().split('–')
         return Pilot(number=str(car).strip(), name=str(pilot_name).strip(), laps=laps)
 
-    def to_models(self, lines_content) -> list:
+    def to_models(self, lines_content) -> [Pilot]:
         return list(map(lambda item: self.to_model(item), lines_content.items()))
