@@ -6,3 +6,4 @@ en:
   invalid_pilot_name: The format of pilot name in log file is invalid. line {} content {}
   invalid_lap_times: The format of laps in log file is invalid. line {} content {}
   invalid_lap_speed: The format of lap_average in log file is invalid. line {} content {}
+  invalid_report_name: Ther report name {} is invalid the valid names are {}

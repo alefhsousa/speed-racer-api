@@ -2,3 +2,5 @@ pytest==4.3.1
 factory_boy==2.11.1
 PyYAML==5.1
 python-i18n[YAML]==0.3.1
+flask==1.0.2
+Flask-RESTful==0.3.7
