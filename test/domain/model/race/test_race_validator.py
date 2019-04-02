@@ -43,4 +43,3 @@ class TestRaceValidator(object):
         assert not result.is_right
         assert result.is_left
         assert result.value[0].key == 'invalid_lap_speed'
-

@@ -68,4 +68,3 @@ class TestDefaultReport(object):
         assert message.category == MessageCategory.WARNING
         assert message.target == 'timer_after_winner'
         assert message.key == 'without_pilots'
-

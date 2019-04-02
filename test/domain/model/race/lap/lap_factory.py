@@ -15,4 +15,3 @@ class LapFactory(factory.Factory):
     number = Sequence(lambda n: n + 1)
     lap_time = lazy_attribute(lambda o: fake.time_object())
     lap_speed = lazy_attribute(lambda o: float(fake.random_number()))
-
